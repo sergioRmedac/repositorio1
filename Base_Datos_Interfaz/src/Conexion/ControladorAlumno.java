@@ -20,7 +20,7 @@ public class ControladorAlumno {
         this.conexion = conexion;
     }
     
-    public ArrayList<Alumno> obtenerTodosAlumnos()throws SQLException{
+    public ArrayList<Alumno> obtenerTodos()throws SQLException{
         ArrayList<Alumno> alumnos=new ArrayList<>();
         String consulta="SELECT * FROM alumnos";
         ResultSet resultado=conexion.ejecutarSelect(consulta);
